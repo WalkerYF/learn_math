@@ -45,10 +45,10 @@
 直接用内置函数normspec即可解决
 
 \begin{matlabcode}
-    normspec([0.5,2.5],2,0.25)
+    normspec([0.5,2.5],2,0.5)
 \end{matlabcode}
 得出概率为
-\[ P\{0.5<X<2.5\} \approx 0.97725 \]
+\[ P\{0.5<X<2.5\} \approx 0.84 \]
 
 \clearpage
 
@@ -70,7 +70,7 @@
     % 概率密度函数图
     figure
     x = 0:0.01:4;
-    y1 = normpdf(x, 2, 0.25);
+    y1 = normpdf(x, 2, 0.5);
     plot(x, y1, 'r');
     title('数学期望为2，方差为0.25的正态分布的概率密度函数图');
     xlabel('随机变量X的取值');
@@ -78,7 +78,7 @@
 
     % 分布函数图
     figure
-    y2 = normcdf(x, 2, 0.25);
+    y2 = normcdf(x, 2, 0.5);
     plot(x, y2)
     title('数学期望为2，方差为0.25的正态分布的分布概率函数图');
     xlabel('随机变量X的取值');
@@ -115,8 +115,8 @@
     figure
     x = 1:0.01:3;
     x3 = 1.5:0.01:1.9;
-    y = normpdf(x, 2, 0.25);
-    y3 = normpdf(x3, 2, 0.25);
+    y = normpdf(x, 2, 0.5);
+    y3 = normpdf(x3, 2, 0.5);
     plot(x, y) % 先画出原有的图像
     hold on % 切换状态
     area(x3, y3) % 在原有的图像上叠加
