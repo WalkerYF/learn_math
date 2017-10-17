@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+  \PYG{c}{\PYGZpc{} 第三题}
+  \PYG{c}{\PYGZpc{} 画出区间[1.5, 1.9] 上的分布密度曲线下方区域。}
+
+  \PYG{n}{figure}
+  \PYG{n}{x} \PYG{p}{=} \PYG{l+m+mi}{1}\PYG{p}{:}\PYG{l+m+mf}{0.01}\PYG{p}{:}\PYG{l+m+mi}{3}\PYG{p}{;}
+  \PYG{n}{x3} \PYG{p}{=} \PYG{l+m+mf}{1.5}\PYG{p}{:}\PYG{l+m+mf}{0.01}\PYG{p}{:}\PYG{l+m+mf}{1.9}\PYG{p}{;}
+  \PYG{n}{y} \PYG{p}{=} \PYG{n}{normpdf}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mf}{0.25}\PYG{p}{);}
+  \PYG{n}{y3} \PYG{p}{=} \PYG{n}{normpdf}\PYG{p}{(}\PYG{n}{x3}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mf}{0.25}\PYG{p}{);}
+  \PYG{n}{plot}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{y}\PYG{p}{)} \PYG{c}{\PYGZpc{} 先画出原有的图像}
+  \PYG{n}{hold} \PYG{n}{on} \PYG{c}{\PYGZpc{} 切换状态}
+  \PYG{n}{area}\PYG{p}{(}\PYG{n}{x3}\PYG{p}{,} \PYG{n}{y3}\PYG{p}{)} \PYG{c}{\PYGZpc{} 在原有的图像上叠加}
+  \PYG{n}{title}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}区间[1.5, 1.9] 上的概率密度曲线下方区域\PYGZsq{}}\PYG{p}{);}
+  \PYG{n}{xlabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}随机变量X\PYGZsq{}}\PYG{p}{);}
+\end{Verbatim}

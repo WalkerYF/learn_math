@@ -1,0 +1,20 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+  \PYG{n}{clc}
+  \PYG{n}{clear}
+  \PYG{c}{\PYGZpc{} 概率密度函数图}
+  \PYG{n}{figure}
+  \PYG{n}{x} \PYG{p}{=} \PYG{l+m+mi}{0}\PYG{p}{:}\PYG{l+m+mf}{0.01}\PYG{p}{:}\PYG{l+m+mi}{4}\PYG{p}{;}
+  \PYG{n}{y1} \PYG{p}{=} \PYG{n}{normpdf}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mf}{0.25}\PYG{p}{);}
+  \PYG{n}{plot}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{y1}\PYG{p}{,} \PYG{l+s}{\PYGZsq{}r\PYGZsq{}}\PYG{p}{);}
+  \PYG{n}{title}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}数学期望为2，方差为0.25的正态分布的概率密度函数图\PYGZsq{}}\PYG{p}{);}
+  \PYG{n}{xlabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}随机变量X的取值\PYGZsq{}}\PYG{p}{);}
+  \PYG{n}{ylabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}概率密度\PYGZsq{}}\PYG{p}{);}
+
+  \PYG{c}{\PYGZpc{} 分布函数图}
+  \PYG{n}{figure}
+  \PYG{n}{y2} \PYG{p}{=} \PYG{n}{normcdf}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mf}{0.25}\PYG{p}{);}
+  \PYG{n}{plot}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{y2}\PYG{p}{)}
+  \PYG{n}{title}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}数学期望为2，方差为0.25的正态分布的分布概率函数图\PYGZsq{}}\PYG{p}{);}
+  \PYG{n}{xlabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}随机变量X的取值\PYGZsq{}}\PYG{p}{);}
+  \PYG{n}{ylabel}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}P\PYGZob{}X \PYGZlt{}= x\PYGZcb{}\PYGZsq{}}\PYG{p}{);}
+\end{Verbatim}
